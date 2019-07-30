@@ -45,9 +45,7 @@ y = str(input())
 b = []
 for i in range(len(y)):
     b.append(y[i])
-
-#запись в словарь
-d = dict(zip(a,b))
+d = dict(zip(a,b)) #запись в словарь
 
 #3 строка, зашифровать
 x1 = str(input())
@@ -105,6 +103,7 @@ for i in range(x):
     a.append(str.lower(input()))
 a = set(a)
 y = int(input()) #ввод количества записей с одним словарным словом на строку
+
 #запись списка списков
 b = []
 for j in range(y):
@@ -122,8 +121,7 @@ for ii in c:
     d.append(ii.lower())
 dd = dict(zip(c,d)) #запись в словарь с значениями в .lower()
 
-#вычитание одного множества из другого
-s = set(d) - set(a)
+s = set(d) - set(a) #вычитание одного множества из другого
 
 z = []
 for key, value in dd.items():
